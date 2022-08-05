@@ -6,3 +6,55 @@
   margin: auto;
   max-width: 46rem;
 }
+
+.header_container_tasks {
+  color: aliceblue;
+  margin-top: 4rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_container_tasks span {
+  background-color: var(--gray-400);
+  padding: 2px 8px;
+  border-radius: 10px;
+  margin-left: 8px;
+  color: var(--white);
+  font-size: 0.75rem;
+}
+
+.created_tasks {
+  color: var(--blue);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.completed_tasks {
+  color: var(--purple);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.no_tasks_container {
+ text-align: center;
+ padding: 4rem 0;
+ margin-top: 1.5rem;
+ border-top-right-radius: 8px;
+ border-top-left-radius: 8px;
+ border-top: 1px solid var(--gray-400);
+}
+
+.no_tasks_container > img {
+  max-width: 3.5rem;
+} 
+
+.no_tasks_container {
+  color: var(--gray-300);
+
+}
+
+.no_tasks_container .paragraph_first {
+  font-weight: 700;
+  margin-top: 1rem;
+}
