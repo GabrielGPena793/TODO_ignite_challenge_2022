@@ -19,7 +19,7 @@ export function Todo() {
 
   const [tasksCompleted, setTasksCompleted] = useState(0)
 
-  const TodosLength = todos.length;
+  const todosLength = todos.length;
 
   function handleTaskChecked(id: string) {
     const tasks =  todos.map(todo => {
@@ -65,15 +65,15 @@ export function Todo() {
           />
           <div>
             <div className={styles.header_container_tasks}>
-              <p className={styles.created_tasks}>Tarefas criadas <span>{TodosLength}</span></p>
+              <p className={styles.created_tasks}>Tarefas criadas <span>{todosLength}</span></p>
               <p className={styles.completed_tasks}>
                 Concluídas 
                 <span>
-                  {tasksCompleted > 0 ? `${tasksCompleted} de ${TodosLength}` : 0}
+                  {tasksCompleted > 0 ? `${tasksCompleted} de ${todosLength}` : 0}
                 </span>
               </p>
             </div>
-            {TodosLength === 0 ?
+            {todosLength === 0 ?
               <div className={styles.no_tasks_container}>
                 <img src={emptyTasksImg} alt="Clipboard indicando que não há tasks" />
                 <p className={styles.paragraph_first}>Você ainda não tem tarefas cadastradas</p>
